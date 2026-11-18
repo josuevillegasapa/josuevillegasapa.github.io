@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "nombre": "Laptop Gamer ASUS TUF F15",
+        "descripcion": "Procesador Intel Core i5, 16GB RAM, 512GB SSD NVMe, Gráficos RTX 3050 de 4GB.",
+        "precio": 6499.00,
+        "categoria": "Laptops",
+        "stock": 8,
+        "imagen": "img/producto1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Laptop HP Pavilion 15.6\"",
+        "descripcion": "AMD Ryzen 7, 16GB RAM, 1TB SSD, Pantalla Full HD IPS con Windows 11 Home.",
+        "precio": 5290.50,
+        "categoria": "Laptops",
+        "stock": 4,
+        "imagen": "img/producto2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Laptop Lenovo IdeaPad 3",
+        "descripcion": "Ideal para estudiantes y oficina, AMD Ryzen 5, 8GB RAM, 256GB SSD.",
+        "precio": 3650.00,
+        "categoria": "Laptops",
+        "stock": 0,
+        "imagen": "img/producto3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Mouse Inalámbrico Logitech MX Master 3S",
+        "descripcion": "Sensor Darkfield de 8000 DPI, desplazamiento electromagnético MagSpeed y USB-C.",
+        "precio": 80.00,
+        "categoria": "Perifericos",
+        "stock": 15,
+        "imagen": "img/producto4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Teclado Mecánico Redragon K552 RGB",
+        "descripcion": "Switches mecánicos Outemu Red, formato compacto TKL con iluminación LED RGB.",
+        "precio": 120.00,
+        "categoria": "Perifericos",
+        "stock": 3,
+        "imagen": "img/producto5.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Auriculares Gamer HyperX Cloud Stinger 2",
+        "descripcion": "Sonido envolvente, almohadillas de espuma viscoelástica y micrófono con cancelación de ruido.",
+        "precio": 210.00,
+        "categoria": "Audio",
+        "stock": 12,
+        "imagen": "img/producto6.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Audífonos Inalámbricos Sony WH-CH520",
+        "descripcion": "Conectividad Bluetooth, hasta 50 horas de batería y micrófono integrado para llamadas.",
+        "precio": 295.00,
+        "categoria": "Audio",
+        "stock": 6,
+        "imagen": "img/producto7.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Monitor Gamer LG UltraGear 24\" FHD",
+        "descripcion": "Panel IPS de 144Hz, tiempo de respuesta de 1ms, tecnología AMD FreeSync Premium.",
+        "precio": 1850.00,
+        "categoria": "Perifericos",
+        "stock": 5,
+        "imagen": "img/producto8.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Disco Duro Externo Seagate One Touch 1TB",
+        "descripcion": "Almacenamiento portátil USB 3.0 compatible con Windows y Mac.",
+        "precio": 480.00,
+        "categoria": "Accesorios",
+        "stock": 10,
+        "imagen": "img/producto9.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Memoria USB Kingston DataTraveler Exodia 64GB",
+        "descripcion": "Tecnología USB 3.2 Gen 1 con diseño práctico y tapa protectora.",
+        "precio": 65.00,
+        "categoria": "Accesorios",
+        "stock": 25,
+        "imagen": "img/producto10.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Hub USB-C 7 en 1 Anker",
+        "descripcion": "Incluye puerto HDMI 4K, lector de tarjetas SD/TF, puertos USB 3.0 y Power Delivery.",
+        "precio": 310.00,
+        "categoria": "Accesorios",
+        "stock": 2,
+        "imagen": "img/producto11.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Impresora Multifuncional Epson EcoTank L3210",
+        "descripcion": "Sistema de tanque de tinta continuo original, impresión, copiado y escaneo económico.",
+        "precio": 1550.00,
+        "categoria": "Perifericos",
+        "stock": 4,
+        "imagen": "img/producto12.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Router Wi-Fi TP-Link Archer C54 AC1200",
+        "descripcion": "Doblebanda de alta velocidad, 4 antenas externas para mayor cobertura en el hogar.",
+        "precio": 260.00,
+        "categoria": "Accesorios",
+        "stock": 8,
+        "imagen": "img/producto13.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Silla Gamer Corsair T3 Rush",
+        "descripcion": "Diseño ergonómico inspirado en automovilismo, tejido exterior transpirable y cojín lumbar.",
+        "precio": 2350.00,
+        "categoria": "Accesorios",
+        "stock": 0,
+        "imagen": "img/producto14.jpg"
+    },
+    {
+        "id": 15,
+        "nombre": "Micrófono Condensador HyperX QuadCast S",
+        "descripcion": "Iluminación RGB personalizable, soporte antivibración y cuatro patrones polares seleccionables.",
+        "precio": 250.00,
+        "categoria": "Audio",
+        "stock": 3,
+        "imagen": "img/producto15.jpg"
+    }
+]
