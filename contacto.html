@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | AndesTech Store</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo AndesTech" onerror="this.style.display='none'">
+                <span>AndesTech</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html" class="active">Contacto</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="faq.html">FAQ</a>
+                <a href="carrito.html" class="btn-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container seccion">
+        <h1 class="titulo-seccion">Contáctanos</h1>
+
+        <div class="grid-dos-columnas">
+            <!-- Formulario de Contacto -->
+            <section class="card-info">
+                <h2>Envíanos un mensaje</h2>
+                <form id="form-contacto" novalidate>
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez Mamani" required>
+                        <small class="error-msg" id="error-nombre"></small>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="correo">Correo electrónico *</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                        <small class="error-msg" id="error-correo"></small>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="celular">Número de celular *</label>
+                        <input type="tel" id="celular" name="celular" placeholder="Ej. 71234567" required>
+                        <small class="error-msg" id="error-celular"></small>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Consulta sobre disponibilidad o envíos" required>
+                        <small class="error-msg" id="error-asunto"></small>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta aquí..." required></textarea>
+                        <small class="error-msg" id="error-mensaje"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+
+                <!-- Mensaje de Confirmación -->
+                <div id="confirmacion-envio" class="alerta-exito oculto">
+                    ✅ ¡Gracias por comunicarte con nosotros! Tu mensaje ha sido enviado correctamente. Te responderemos a la brevedad.
+                </div>
+            </section>
+
+            <!-- Información de Contacto y Redes -->
+            <section class="card-info">
+                <h2>Información de la Tienda</h2>
+                <p><strong>📍 Dirección:</strong> Av. 6 de Octubre entre Bolívar y Adolfo Mier, Zona Central, Oruro - Bolivia.</p>
+                <p><strong>📞 Teléfono / WhatsApp:</strong> +591 72345678</p>
+                <p><strong>✉️ Correo institucional:</strong> contacto@andestech.bo</p>
+                <p><strong>🕒 Horario de atención:</strong> Lunes a Sábado de 09:00 a 19:30</p>
+
+                <hr>
+                <h3>Síguenos en Redes Sociales</h3>
+                <div class="redes-sociales">
+                    <a href="https://facebook.com" target="_blank" class="btn-red">Facebook</a>
+                    <a href="https://instagram.com" target="_blank" class="btn-red">Instagram</a>
+                    <a href="https://tiktok.com" target="_blank" class="btn-red">TikTok</a>
+                    <a href="https://wa.me/59172345678" target="_blank" class="btn-red">WhatsApp</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 AndesTech Store - Todos los derechos reservados.</p>
+            <p>Oruro, Bolivia | Precios expresados en Bolivianos (Bs)</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

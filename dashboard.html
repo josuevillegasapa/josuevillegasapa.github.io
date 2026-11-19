@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | AndesTech Store</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Librería Chart.js para gráficos dinámicos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo AndesTech" onerror="this.style.display='none'">
+                <span>AndesTech</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="faq.html">FAQ</a>
+                <a href="carrito.html" class="btn-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container seccion">
+        <div class="dashboard-header">
+            <h1>Panel de Control (Dashboard)</h1>
+            <p class="fecha-actualizacion">Última actualización: <strong id="fecha-actualizacion">--/--/---- --:--</strong></p>
+        </div>
+
+        <!-- Tarjetas Estadísticas (KPIs) -->
+        <section class="grid-kpis">
+            <div class="card-kpi">
+                <span class="kpi-titulo">Total de Productos</span>
+                <strong class="kpi-valor" id="kpi-total-productos">0</strong>
+            </div>
+            <div class="card-kpi">
+                <span class="kpi-titulo">Cantidad de Categorías</span>
+                <strong class="kpi-valor" id="kpi-total-categorias">0</strong>
+            </div>
+            <div class="card-kpi">
+                <span class="kpi-titulo">Valor Total del Inventario</span>
+                <strong class="kpi-valor" id="kpi-valor-inventario">Bs 0.00</strong>
+            </div>
+            <div class="card-kpi kpi-ok">
+                <span class="kpi-titulo">Con Stock Disponible</span>
+                <strong class="kpi-valor" id="kpi-stock-disponible">0</strong>
+            </div>
+            <div class="card-kpi kpi-alerta">
+                <span class="kpi-titulo">Productos con Bajo Stock</span>
+                <strong class="kpi-valor" id="kpi-bajo-stock">0</strong>
+            </div>
+            <div class="card-kpi kpi-peligro">
+                <span class="kpi-titulo">Productos Agotados</span>
+                <strong class="kpi-valor" id="kpi-agotados">0</strong>
+            </div>
+        </section>
+
+        <!-- Gráficos Estadísticos -->
+        <section class="grid-dos-columnas seccion">
+            <div class="card-info">
+                <h2>Productos por Categoría</h2>
+                <div class="contenedor-grafico">
+                    <canvas id="grafico-categorias"></canvas>
+                </div>
+            </div>
+            <div class="card-info">
+                <h2>Distribución de Stock</h2>
+                <div class="contenedor-grafico">
+                    <canvas id="grafico-stock"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabla de Productos con Bajo Inventario -->
+        <section class="card-info seccion">
+            <h2>⚠️ Productos con Bajo Inventario (Stock &le; 5 unidades)</h2>
+            <div class="tabla-responsive">
+                <table class="tabla-dashboard">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio (Bs)</th>
+                            <th>Stock Actual</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-bajo-stock">
+                        <!-- Filas generadas dinámicamente por dashboard.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 AndesTech Store - Todos los derechos reservados.</p>
+            <p>Oruro, Bolivia | Precios expresados en Bolivianos (Bs)</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
